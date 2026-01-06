@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eg">
+    <head>
+       <meta name="auother" content="mehnaz">
+       <meta charset="UTF-8">
+       <meta nmae="description" content="Registration Form">
+       <title>Form</title>
+       <style>
+        body{
+            background:linear-gradient(to right, rgb(182, 32, 42),rgb(192, 34, 223));
+            padding:50px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            min-height: 100vh;
+        }
+        form{
+            margin: 40px auto;
+            padding: 20pxS;
+            width: 600px;
+        }
+        #main h2{
+            text-align: center;
+        }
+        
+        fieldset{
+            width: 600px;
+            margin: 40px auto;
+            border-radius:40px;
+        }
+        button{
+            border-radius: 8px;
+            cursor: pointer;
+        }
+       </style>
+    </head>
+    <body>
+        <div id="main">
+        <h2 class="hii">Registration Form</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Student Details</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter  your name" required>
+            </p>
+            <p>
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob" name="dob">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter  your email" required>
+            </p>
+            <h3>Gender:</h3>
+            <p>
+                <input type="radio" id="Gender" name="Gender">
+                  <label for="Gender">Male</label>
+               </p>
+               <p>
+                <input type="radio" id="Gender" name="Gender">
+                  <label for="Gender">Female</label>
+               </p>
+               <p>
+                <input type="radio" id="Gender" name="Gender">
+                  <label for="Gender">other</label>
+               </p>
+               <h3>Course section:</h3>
+               <p>
+                <select>
+                    <option>BCA</option>
+                    <option>BBA</option>
+                    <option>BSC</option>
+                    <option>BA</option>
+                </select>
+               </p>
+               <p>
+                   <label for="message">Message:</label><br>
+                <textarea rows="10" cols="30" id="message" name="message" placeholder="Enter your message" style="border-radius: 8px;"></textarea>
+               </p>
+               <button type="submit">Submit</button>
+               <button type="reset">Reset</button>
+               </legend>
+               </fieldset>
+               </div>
+        </form>
+    </body>
+</html>
